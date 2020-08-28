@@ -5,7 +5,7 @@ let annonceList = [];
 
 // liste toutes les annonces 
 
-let IdAnnonce = (function(req,body,IdAnnonce);
+let IdAnnonce = (function(req,body,IdAnnonce) {
 connection.query(" SELECT * from annonce ;", function (error, resultSQL) {
     if (error) {
     response.status(400).send(error);
@@ -73,4 +73,4 @@ response.redirect('/Annonce');
 });
 
 
-
+})
